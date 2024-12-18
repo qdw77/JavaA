@@ -3,6 +3,18 @@ package ch02.sec09;
 public class OperationPromtionExample {
 
 	public static void main(String[] args) {
+		
+
+		//문자열에서 다른 기본 데이터 타입으로 변화
+		String st="100";
+		Byte.parseByte(st);
+		Short.parseShort(st);
+		Integer.parseInt(st);
+		Long.parseLong(st);
+		
+		//기본 데이터 타입 --> 문자열 변환
+		String str = String.valueOf("기본타입값");
+				
 		byte result1=10+20;
 		System.out.println("reslut1: "+result1);
 		
