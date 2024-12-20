@@ -772,20 +772,21 @@ public class VaribleScopeExample {
 		//5.
 		//x=5/y=8
 		//4x+5y=60
-		int x;
-		int y;
-		// 우선 for문을 사용하라 했으니 
-		for (x=1; x<=10;) {
-			x++;
-			for (y=1; y<=10;) {
-				y++;
-				if ((4*x)+(5*y)==60) {
-					System.out.println(x);
-					System.out.println(y);
-					break;
-				}
-			}
-		}
+//		int x;
+//		int y;
+//		// 우선 for문을 사용하라 했으니 
+//		for (x=1; x<=10;) {
+//			x++;
+//			for (y=1; y<=10;) {
+//				y++;
+//				if ((4*x)+(5*y)==60) {
+//					System.out.println(x);
+//					System.out.println(y);
+//					continue;
+//
+//				}
+//			}
+//		}
 		
 		
 		
@@ -794,12 +795,92 @@ public class VaribleScopeExample {
 		
 		
 		// 6.
+		//2중 for문 문제
 //		for(char aa='*'; aa<=5; aa++) {
-//			System.out.println(aa);
+//			System.out.print(aa);
 //			}
 		
+
+//		for (int i=1;i<=10;i++) {
+//			
+//			if(i%2==0) {
+//				for(int j=1; j<=i;j++) { //별 찍어주는 코드
+//					System.out.print("*");
+//				}
+//			}
+//			System.out.println();
+//			
+//		}
 		
-		//7.
+		
+//		for (int i=1;i<=5;i++) {
+//			
+//				for(int j=1; j<=i*2;j++) { //별 찍어주는 코드
+//					System.out.print("*");
+//				}
+//			System.out.println();
+//			
+//		}
+		
+		
+//		for (int i=1;i<=5;i++) {
+//			
+//			for(int j=1; j<=(i*2)-1;j++) { //별 찍어주는 코드
+//				System.out.print("*");
+//			}
+//		System.out.println();
+//		
+//	}		
+
+		
+		
+		
+//		//7.
+		Scanner scanner =  new Scanner(System.in);
+		int balance=0;
+		boolean key=true;
+		
+		while(key) {
+			System.out.println("------------------------------");
+			System.out.println("1. 예금 2.출금 3.잔고 4.종료");
+			System.out.println("------------------------------");
+			System.out.println("선택> ");
+			
+			int menu = Integer.parseInt(scanner.nextLine());
+			switch(menu) {
+			
+			case 1: //예금
+				System.out.println("예금액> ");
+				balance+=Integer.parseInt(scanner.nextLine());
+				break;
+				
+			case 2: //출금
+				System.out.println("출금액> ");
+				balance-=Integer.parseInt(scanner.nextLine());
+				break;
+				
+			case 3: //잔고
+				System.out.print("잔고> "); //행 안바꿈
+				System.out.println(balance); //새로운 행
+				break;
+				
+			case 4: //종료
+				//while 탈출 시켜야하는 부분
+				key=false;
+				break;
+				
+			
+			}
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		
 		
