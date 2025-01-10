@@ -1,7 +1,7 @@
 package ch05.sec05;
 
-import java.util.Calendar;
-import java.util.Scanner;
+//import java.util.Calendar;
+//import java.util.Scanner;
 
 public class SplitExample {
 
@@ -169,8 +169,8 @@ public class SplitExample {
 //		int[] intArray2=new int[30]; //기본값이 0으로 채워짐
 //		String[] names = new String[30]; //기본 값이 null로 채워짐
 
-		// 배열의 길이는 저장할 수 있는 항목의 수
-		// 배열함수.length; 읽기만 가능
+//		// 배열의 길이는 저장할 수 있는 항목의 수
+//		// 배열함수.length; 읽기만 가능
 //		intArray2.length=100;
 //		~~~~=intArray2.length;
 //		
@@ -189,16 +189,16 @@ public class SplitExample {
 //		double avg =(double) sum/scores.length;
 //		System.out.println("평균: "+avg);
 
-		// 다차원 배열
-		// p178
-		// 변수[1차원 인덱스][2차원 인덱스]....[n차원 인덱스]
-		// 변수[0][0][0]
+//		// 다차원 배열
+//		// p178
+//		// 변수[1차원 인덱스][2차원 인덱스]....[n차원 인덱스]
+//		// 변수[0][0][0]
 
-//		타입[][] 변수 = {
-//				{값1,값2....},
-//				{값3,값4....}
-//				...... 	
-//		};
+//		// 타입[][] 변수 = {
+//			//	{값1,값2....},
+//			//	{값3,값4....}
+//			//	...... 	
+//	//	};
 
 //		int[][] x= {{1,2,3,4,5},{6,7,8,9,10}};
 //		x[0][2]
@@ -242,7 +242,7 @@ public class SplitExample {
 //		double totalAvg=(double)totalSum/totalStudent;
 //		System.out.println("전체 학생의 평균 점수: "+totalAvg);
 
-		// new 연산자로 다차원 배열 생성
+//		// new 연산자로 다차원 배열 생성
 		// int[][] x =new int[2][3];
 		// String[][] y=new String[3][5];
 
@@ -313,11 +313,11 @@ public class SplitExample {
 //		System.out.println("전체 학생의 수학 평균: "+totalEnglishAvg);
 //		System.out.println();
 
-		// 객체를 참조하는 배열
+//		// 객체를 참조하는 배열
 
 //		String[] strArray=new String[3];
 //		strArray[0]="java";
-//		strArray[1]="java";//있던 것에 덮어쓰기?
+//		strArray[1]="java"; //있던 것에 덮어쓰기?
 //		strArray[2]=new String("java"); //새롭게
 //		
 //		
@@ -325,7 +325,7 @@ public class SplitExample {
 //		System.out.println(strArray[0]==strArray[2]);
 //		System.out.println(strArray[0].equals(strArray[2]));
 
-		// 배열복사
+//		// 배열복사
 		// System.arraycopy(원본, 원본 시작 idx, 복사배열, 복사배열 시작 위치, 항목 수);
 
 //		// 길이 3인 원본 배열 생성
@@ -339,7 +339,7 @@ public class SplitExample {
 //			System.out.println(newStrArray[i] + ", ");
 //		}
 
-		// 향상된 for문
+//		// 향상된 for문
 
 //		for(변수: 배열)
 //		int[] scores= {95,71,84,93,87};
@@ -429,7 +429,7 @@ public class SplitExample {
 		
 //		Scanner scanner = new Scanner(System.in);
 //		
-//		System.out.println("1.학생수|2.점수 입력|3. 점수 리스트|4. 분석|5. 종료");
+//		System.out.println("1. 학생수 | 2. 점수 입력 | 3. 점수 리스트 | 4. 분석 | 5. 종료");
 //		int st=
 //		
 //		while(st) {
