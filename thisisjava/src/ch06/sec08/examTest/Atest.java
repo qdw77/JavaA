@@ -25,45 +25,46 @@ public class Atest {
 	// A제품 > A공장 / B공장 B제품 / 총
 	// 자금 필드(클래스변수)
 	// 공장위치
-	// 휠 사이즈 > 고정값 필드 final(최종적)?
 	static int WheelSize; 
 	String Apoint = "신탄진"; // 공장 위치
 	static int Amoney; // 자금 // 각 공장의 자금 필드(클래스변수)
 	static int Wheel; // 현재 재고
-	static int WeelMaking;
+	static int AallNum; // 총 가격
+//	static int AWeelMaking; //만든 휠
+//	int AafterNum; //판매 후 자금
+//	static int AaferWeel; // 판매 후 재고
 	
 	// A공장 가격 클래스 메서드
 	static int AwheelNum = 500000;
-
-	static void Aproduce(int WheelSize,int WheelMaking) {
+	// Btest 의 B호출 Btest B
+	static void Aproduce(int WheelSize) {
 		// 객체 생성
 		Atest Amaking = new Atest();
+		Btest B = new Btest();
 		
-		// WheelMaking 만들 수량
-		int WheelAll = Wheel + WheelMaking; // 재고 제작
+		Amaking.Wheel += B.CarMaking; // 재고 제작
+		// CarMaking < 휠 구매량
+		// Wheel < 현재 재고
 	}
 	
 
-	// 클래스 메서드 ,안에 들어가야하는 것 구매 수량,장착메서드?,가격계산,구매 수량,자금
-	static void Acount(int Wheelnum,int WheelAll) { // WheelSize 휠사이즈 // Wheelnum 구매 수량
+	// 클래스 메서드 ,안에 들어가야하는 것 구매 수량,장착메서드?,가격계산,자금
+	static void Acount() { // WheelSize 휠사이즈 // CarMaking < B공장의 구매하고자 하는 휠 개수
 		
 		// 객체 생성
 		Atest Anum = new Atest();
 		Btest B = new Btest();
 		// WheelAll < 값 가지고 와서 계산 
-		
-		// B 클래스 불러와서 구매하는 메서드
-		// +Wheelnum 구매 수량
-		if (Wheel > 0) {
+		// B 클래스 불러와서 구매하는 메서드 / CarMaking < B공장의 구매하고자하는 휠 개수
+		if (Anum.Wheel > 0) {
 			// 휠타이어 가격 계산기능 (A공장 클래스 메서드
-			int AallNum = AwheelNum * Wheelnum; // 가격 계산
+			Anum.AallNum = AwheelNum * B.CarMaking; // 가격 계산
 			// 판매 후 자금
-			int Amoneyafter = Amoney + AallNum;
+			Anum.Amoney += AallNum;
 		} else {
 			System.out.println("판매불가");
 		}
-		int Wheel = WheelAll - Wheelnum; // 재고 빼기 > 현재 재고
-
+		Anum.Wheel -= B.CarMaking; // 현재 재고 - 구매하고자 하는 재고
 	}
 
 }
