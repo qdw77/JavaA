@@ -1,5 +1,6 @@
-package ch07.sec08.exam01;
+package ch07.sec08.exam01.GunEx;
 
+// run 함수
 public class Gun {
 	// Car 필드를 선언하고 메소드로 필드에 대입된 객체 roll()메소드 호출
 	/*
@@ -11,9 +12,9 @@ public class Gun {
 	 * 5. 파란총알 - 파란 총알이 날아간다 - 오버라이딩 roll Bluegun
 	 * */
 
-	public Sgun sgun;
+	public Sgun sgun; // 부모 필드
 	
-	public void run() {
+	public void run() { // 필드 객체들의 메소드 호출
 		sgun.bullet(); 
 	}
 	
