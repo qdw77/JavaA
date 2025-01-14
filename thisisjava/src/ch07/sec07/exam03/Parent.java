@@ -19,6 +19,27 @@ public class Parent {
 	 * 자식 타입에 선언된 필드와 메소드를 꼭 사용해야한다면 강제 타입 변환
 	 * */
 	
+//	private
+//	public
+	//인스턴스 메서드
+	/*
+	 * 상수
+	 * constant
+	 * 불면의 값
+	 * 상수는 객체마다 저장할 필요가 없음
+	 * 인스턴스 전용 필드가 아니다
+	 * final+static 의 성질
+	 * 
+	 * 다른 패키지 import
+	 * 
+	 * super < 부모클래스
+	 * super.필드명
+	 * super() < 호출
+	 * super.메서드명 
+	 * 
+	 * */
+	
+	
 	
 	public String field1;
 	
